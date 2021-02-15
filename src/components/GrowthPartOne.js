@@ -43,11 +43,15 @@ function GrowthPartOne({
       <Typography component={"div"}>
         <p>
           {" "}
-          <b>D: Debrief</b>
+          <b>B: Beliefs</b>
         </p>
         <p>
-          The fourth step involves <strong> reflecting </strong> on how the new
-          explanations affect our <strong> mood and feelings. </strong>
+          The second step involves{" "}
+          <strong> identifying the thoughts and beliefs </strong>that are going
+          through our heads, such as judgments, predictions, reactions, and
+          explanations. For example, we might notice judgments, predictions,
+          reactions, and explanations. They can happen automatically and be hard
+          to notice, but these thoughts still affect us.
         </p>
       </Typography>
       <Typography component={"div"}>
@@ -64,20 +68,14 @@ function GrowthPartOne({
       <Typography component={"div"}>
         <p>
           {" "}
-          <b>A: Activating Event</b>
+          <b>D: Debrief</b>
         </p>
         <p>
-          The first step of the ABCD technique involves{" "}
-          <strong>identifying the objective facts and events</strong> about a
-          situation.
+          The fourth step involves <strong> reflecting </strong> on how the new
+          explanations affect our <strong> mood and feelings. </strong>
         </p>
       </Typography>
-      <Typography component={"div"}>
-        <p>
-          Now, you will learn about the <b> ABCD technique </b>, which promotes
-          flexible thinking.
-        </p>
-      </Typography>
+
       <div className="btn">
         <div className="arrow-button">
           <button onClick={() => changeBack()} className="arrow-left"></button>

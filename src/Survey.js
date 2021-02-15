@@ -8,6 +8,9 @@ import Instructions from "./components/Instructions";
 import LessonPrompt from "./components/LessonPrompt";
 import Growth from "./components/Growth";
 import GrowthPartOne from "./components/GrowthPartOne";
+import ABCDTechnique from "./components/ABCDTechnique";
+import Simran from "./components/Simran";
+import ActivatingEvent from "./components/ActivatingEvent";
 // import GrowthStory from "./components/GrowthStory";
 // import GrowthExercise from "./components/GrowthExercise";
 // import GratitudeIntro from "./components/GratitudeIntro";
@@ -234,63 +237,63 @@ function App() {
         </Container>
       </div>
     );
+  } else if (steps === 6) {
+    return (
+      <div className="App">
+        {/* Growth continuation part one */}
+        <Container maxWidth="lg">
+          <Alert variant="filled" severity="success">
+            Your Thrive! Points — {growthScore}{" "}
+          </Alert>
+          <ABCDTechnique
+            growthScore={growthScore}
+            setGrowthScore={setGrowthScore}
+            changeBack={handleBackChange}
+            changeStep={handleChange}
+          />
+        </Container>
+      </div>
+    );
+  } else if (steps === 7) {
+    return (
+      <div className="App">
+        {/* Growth continuation part one */}
+        <Container maxWidth="lg">
+          <Alert variant="filled" severity="success">
+            Your Thrive! Points — {growthScore}{" "}
+          </Alert>
+          <Simran
+            growthScore={growthScore}
+            setGrowthScore={setGrowthScore}
+            challengeFaced={challengeFaced}
+            effortOvercome={effortOvercome}
+            improveFromChallenge={improveFromChallenge}
+            setChallengeFaced={(value) => setChallengeFaced(value)}
+            setImproveFromChallenge={(value) => setImproveFromChallenge(value)}
+            setEffortOvercome={(value) => setEffortOvercome(value)}
+            changeStep={handleChange}
+          />
+        </Container>
+      </div>
+    );
+  } else if (steps === 8) {
+    return (
+      <div className="App">
+        <Container maxWidth="lg">
+          <Alert variant="filled" severity="success">
+            Your Thrive! Points — {growthScore}
+          </Alert>
+          {/* Growth continuation part one */}
+          <ActivatingEvent
+            growthEmail={growthEmail}
+            setGrowthEmail={setGrowthEmail}
+            changeStep={handleChange}
+          />
+        </Container>
+      </div>
+    );
   }
-  //  else if (steps === 6) {
-  //     return (
-  //       <div className="App">
-  //         {/* Growth continuation part one */}
-  //         <Container maxWidth="lg">
-  //           <Alert variant="filled" severity="success">
-  //             Your Thrive! Points — {growthScore}{" "}
-  //           </Alert>
-  //           <GrowthStory
-  //             growthScore={growthScore}
-  //             setGrowthScore={setGrowthScore}
-  //             changeBack={handleBackChange}
-  //             changeStep={handleChange}
-  //           />
-  //         </Container>
-  //       </div>
-  //     );
-  //   } else if (steps === 7) {
-  //     return (
-  //       <div className="App">
-  //         {/* Growth continuation part one */}
-  //         <Container maxWidth="lg">
-  //           <Alert variant="filled" severity="success">
-  //             Your Thrive! Points — {growthScore}{" "}
-  //           </Alert>
-  //           <GrowthExercise
-  //             growthScore={growthScore}
-  //             setGrowthScore={setGrowthScore}
-  //             challengeFaced={challengeFaced}
-  //             effortOvercome={effortOvercome}
-  //             improveFromChallenge={improveFromChallenge}
-  //             setChallengeFaced={(value) => setChallengeFaced(value)}
-  //             setImproveFromChallenge={(value) => setImproveFromChallenge(value)}
-  //             setEffortOvercome={(value) => setEffortOvercome(value)}
-  //             changeStep={handleChange}
-  //           />
-  //         </Container>
-  //       </div>
-  //     );
-  //   } else if (steps === 8) {
-  //     return (
-  //       <div className="App">
-  //         <Container maxWidth="lg">
-  //           <Alert variant="filled" severity="success">
-  //             Your Thrive! Points — {growthScore}
-  //           </Alert>
-  //           {/* Growth continuation part one */}
-  //           <GrowthEmailOutro
-  //             growthEmail={growthEmail}
-  //             setGrowthEmail={setGrowthEmail}
-  //             changeStep={handleChange}
-  //           />
-  //         </Container>
-  //       </div>
-  //     );
-  //   } else if (steps === 9) {
+  // else if (steps === 9) {
   //     return (
   //       <div className="App">
   //         {/* Growth continuation part one */}
