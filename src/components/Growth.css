@@ -1,0 +1,47 @@
+.growth {
+  text-align: left;
+  max-width: 83%;
+  margin: 3rem auto;
+}
+.growth__header {
+  text-align: center;
+  padding: 1px;
+  margin-bottom: 1rem;
+}
+.images {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.images img {
+  display: block;
+  width: 100%;
+}
+.arrow-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 6rem;
+}
+.growth button {
+  padding: 15px 32px;
+}
+.growth .growth__intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+/* .arrow-right {
+  background-color: #2fac2f;
+  background: url("../images/next-arrow.jpg");
+  background-position: center center;
+  background-size: 100% 100%;
+} */
+
+.arrow-left {
+  background-color: #2fac2f;
+  background: url("../images/next-arrow.jpg");
+  background-position: center center;
+  background-size: 100% 100%;
+  transform: rotate(180deg);
+}
