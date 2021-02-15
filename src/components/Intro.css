@@ -1,0 +1,26 @@
+.introduction {
+  font-weight: 700;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.introduction__intro {
+  font-size: 27px;
+  color: #2991c3;
+}
+.introduction__image img {
+  width: 288px;
+}
+
+b {
+  color: #2991c3;
+}
+
+hr {
+  margin: 15px;
+}
+p {
+  margin: 15px;
+}
