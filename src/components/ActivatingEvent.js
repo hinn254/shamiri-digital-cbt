@@ -10,7 +10,7 @@ import {
 } from "@material-ui/core";
 import "./ActivatingEvent.css";
 
-// use existing repo
+// use existing repo with the project
 function GrowthPartOne({
   changeStep = (f) => f,
   changeBack = (f) => f,
